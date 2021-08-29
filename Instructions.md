@@ -9,6 +9,7 @@ sudo mysql_secure_installation
 
 sudo mysql
 CREATE DATABASE wordpress_db;
+CREATE USER 'wordpress_user'@'localhost' identified by 'SecurePassword!';
 GRANT ALL PRIVILEGES ON wordpress_db.* to wordpress_user@'localhost';
 FLUSH PRIVILEGES;
 exit
